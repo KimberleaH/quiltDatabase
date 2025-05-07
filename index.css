@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     padding: 20px 60px;
     background-color: #524371;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 99999999999999;
     width: 100%;
@@ -49,25 +49,22 @@ h1 {
 
 
 
-.pattern-filter-section {
+.pattern-section {
     margin-top: 145px;
     text-align: center;
 }
 
-.button-box {
-    margin-top: 40px;
-}
-
-.filter-button {
+.pattern-link {
     background-color: #382d50;
     color: white;
     padding: 10px;
     border: 1px solid white;
     border-radius: 5px;
     margin: 5px;
+    font-size: .75em;
 }
 
-.filter-button:hover {
+.pattern-link:hover {
     color: yellow;
     background-color: #969682;
     border-color: yellow;
@@ -87,6 +84,11 @@ h1 {
     justify-content: flex-start;
     flex-flow: row wrap;
     gap: 20px;
+}
+
+.pattern-box h3 {
+    position: relative;
+    bottom: 30px;
 }
 
 .pattern {
