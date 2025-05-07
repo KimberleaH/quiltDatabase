@@ -1,0 +1,112 @@
+*, html {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: #bbaadc;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background-color: #524371;
+    position: absolute;
+    top: 0;
+    z-index: 99999999999999;
+    width: 100%;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: yellow;
+}
+
+
+#addPattern {
+    padding: 10px 15px;
+    background-color: #816fa9;
+    border-radius: 10px;
+}
+
+#addPattern:hover {
+    background-color: #969682;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+.pattern-filter-section {
+    margin-top: 145px;
+    text-align: center;
+}
+
+.button-box {
+    margin-top: 40px;
+}
+
+.filter-button {
+    background-color: #382d50;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.filter-button:hover {
+    color: yellow;
+    background-color: #969682;
+    border-color: yellow;
+    cursor: pointer;
+}
+
+.pattern-box {
+    background-color: #816fa9;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.pattern {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 130px;
+    justify-content: center;
+}
+
+.pattern img {
+    max-width: inherit;
+}
+
+.pattern .link {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #a58cd6;
+    background-color: #524371;
+    padding: 10px;
+}
