@@ -48,20 +48,31 @@ h1 {
 }
 
 
+.text {
+    padding: 10px 0;
+}
+
 
 .pattern-section {
     margin-top: 145px;
     text-align: center;
 }
 
-.pattern-link {
+.pattern-link, .pattern-no-link {
     background-color: #382d50;
     color: white;
     padding: 10px;
-    border: 1px solid white;
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px;
     font-size: .75em;
+}
+
+.pattern-link {
+    border: 1px solid white;
+}
+
+.pattern-no-link {
+    border: 1px solid #382d50;
 }
 
 .pattern-link:hover {
@@ -73,13 +84,16 @@ h1 {
 
 .pattern-box {
     background-color: #816fa9;
-    width: 95%;
-    max-width: 1400px;
+    width: 1300px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 40px;
     border-radius: 10px;
+
+}
+
+.pattern-flex {
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
@@ -87,23 +101,27 @@ h1 {
 }
 
 .pattern-box h3 {
-    position: relative;
-    bottom: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.25em;
 }
 
 .pattern {
     display: flex;
     flex-flow: row wrap;
-    max-width: 130px;
+    width: 180px;
     justify-content: center;
 }
 
-.pattern img {
-    max-width: inherit;
+.pattern img, .placeholder {
+    height: 150px;
 }
 
-.pattern .link {
-    margin: 10px;
+.placeholder {
+    border: 1px solid goldenrod;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
 }
 
 footer {
