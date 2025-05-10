@@ -14,12 +14,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 60px;
+    padding: 20px 50px;
     background-color: #524371;
     position: fixed;
     top: 0;
     z-index: 99999999999999;
     width: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    right: 35%;
 }
 
 .link {
@@ -31,21 +38,29 @@ body {
     color: yellow;
 }
 
-
-#addPattern {
-    padding: 10px 15px;
+#addPattern, #managePattern {
     background-color: #816fa9;
+}
+
+#cancel {
+    background-color: #a96f9d;
+}
+
+#toggleButtons {
+    display: none;
+}
+
+.button {
+    padding: 10px 15px;
     border-radius: 10px;
 }
 
-#addPattern:hover {
-    background-color: #969682;
+.button:hover {
+    background-color: #969682 !important;
 }
 
-h1 {
-    color: white;
-    font-size: 1.5em;
-}
+
+
 
 
 .text {
@@ -97,7 +112,7 @@ h1 {
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .pattern-box h3 {
@@ -109,7 +124,7 @@ h1 {
 .pattern {
     display: flex;
     flex-flow: row wrap;
-    width: 180px;
+    width: 160px;
     justify-content: center;
 }
 
