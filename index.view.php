@@ -138,8 +138,8 @@
     </footer>
 
     <script>
-      var manageP = document.getElementById("managePattern");
-      var toggleB = document.getElementById("toggleButtons");
+      let manageP = document.getElementById("managePattern");
+      let toggleB = document.getElementById("toggleButtons");
 
       function toggle() {
         manageP.style.display = "none";
@@ -151,7 +151,7 @@
         toggleB.style.display = "none";
       };
 
-      
+
     </script>
 </body>
 </html>
