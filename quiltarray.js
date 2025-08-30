@@ -349,55 +349,42 @@ const quiltArray = [
    /* -------------- NO PATTERNS -------------- */
    {title: "Name",
     thumbnail: "patterns/image79.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image77.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image75.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image65.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image64.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image70.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image56.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image80.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image73.jpg",
-    url: "#",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image82.png",
-    url: "#",
     category: "No Pattern"},  
    {title: "Name",
     thumbnail: "patterns/image81.png",
-    url: "",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image83.png",
-    url: "",
     category: "No Pattern"},
    {title: "Name",
     thumbnail: "patterns/image84.png",
-    url: "",
     category: "No Pattern"},
 ];
 
@@ -484,7 +471,7 @@ quiltArray.forEach(quiltPattern => {
     let html =
     `<div class="pattern">
        <img src="${quiltPattern.thumbnail}">
-       <a class="pattern-link link" href="${quiltPattern.url}" target="_blank">${quiltPattern.title}</a>
+       <p class="pattern-link">${quiltPattern.title}</p>
     </div>`;
 
     noPatternQuilts.innerHTML += html;
@@ -492,7 +479,7 @@ quiltArray.forEach(quiltPattern => {
     let html =
     `<div class="pattern">
        <div class="placeholder">No Image Yet</div>
-       <a class="pattern-link link" href="${quiltPattern.url}" target="_blank">${quiltPattern.title}</a>
+       <p class="pattern-link">${quiltPattern.title}</p>
     </div>`;
 
     noPatternQuilts.innerHTML += html;
