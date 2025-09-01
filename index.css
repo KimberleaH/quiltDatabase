@@ -124,6 +124,10 @@ h1 {
     justify-content: center;
 }
 
+.no-pattern {
+    margin: 20px;
+}
+
 .pattern img, .placeholder {
     height: 150px;
 }
